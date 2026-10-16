@@ -11,6 +11,7 @@ from pathlib import Path
 # Agregar el directorio del proyecto al path
 PROJECT_ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(PROJECT_ROOT))
+sys.path.insert(0, str(PROJECT_ROOT / "src"))
 
 from PySide6.QtWidgets import QApplication, QMainWindow, QDialog
 from PySide6.QtCore import Qt, QTimer, QProcess, Signal
